@@ -1,0 +1,18 @@
+[submodule ".config/base16-shell"]
+	path = .config/base16-shell
+	url = https://github.com/chriskempson/base16-shell.git
+[submodule ".vim/pack/default/start/base16-vim"]
+	path = .vim/pack/default/start/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule ".vim/pack/default/start/vim-cmake-syntax"]
+	path = .vim/pack/default/start/vim-cmake-syntax
+	url = https://github.com/pboettch/vim-cmake-syntax.git
+[submodule ".vim/pack/default/start/vim-cpp-enhanced-highlight"]
+	path = .vim/pack/default/start/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule ".vim/pack/default/start/python-syntax"]
+	path = .vim/pack/default/start/python-syntax
+	url = https://github.com/vim-python/python-syntax.git
+[submodule ".vim/pack/default/start/tagbar"]
+	path = .vim/pack/default/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git

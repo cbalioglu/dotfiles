@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -o errexit
+
+_src_path=$(cd "$(dirname "$0")" && pwd)
+
+_targets=(.bashrc
+          .config/base16-shell
+          .inputrc
+          .profile
+          .tmux.conf
+          .vim/pack/default
+          .vimrc)
+
+for _target in "${_targets[@]}"; do
+    # Ensure that the base directory exists before we symlink.
+    _target_dir=$(dirname "$_target")
+    [ "$_target_dir" != . ] && mkdir -p "$HOME/$_target_dir"
+
+    # ln on macOS does not have the --no-target-directory option; so we
+    # remove the existing symbolic links manually.
+    rm -f "$HOME/$_target"
+
+    ln -s -f "$_src_path/$_target" "$HOME/$_target"
+done
