@@ -8,6 +8,7 @@ set ignorecase                  " Do case insensitive matching.
 set smartcase                   " Override the 'ignorecase' option if the search pattern contains upper case characters.
 set incsearch                   " While typing a search command, show where the pattern, as it was typed so far, matches.
 set showmatch                   " Show matching brackets.
+set nohlsearch                  " Stop highlighting the search matches.
 
 set noswapfile                  " Do not create swapfiles for buffers.
 set autowrite                   " Automatically save before commands like :next and :make.
@@ -23,7 +24,7 @@ set wildmenu                    " Show command line completions over the status 
 set ruler                       " Show the line and column number of the cursor position, separated by a comma.
 set colorcolumn=80              " Highlight a comma separated list of screen columns with ColorColumn.
 
-" For C++ and Python files use a line length of 100 characters.
+" For C++ and CMake files use a line length of 100 characters.
 autocmd FileType cpp,cmake setlocal colorcolumn=100
 
 " Color Scheme
